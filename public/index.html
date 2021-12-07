@@ -11,15 +11,16 @@
      <nav>
          <div class="logo__stuff">
              <div class="logo">
-                 <img src="" alt="KeurigLogo">
+                 <img src="images/keurig_ca_logo.svg" alt="KeurigLogo">
              </div>
              <div class="search__bar">
                  <input type="search" placeholder="Search hundreds of ways to brew..." class="search">
              </div>
              <div class="cart">
-                 <h2>FREE SHIPPING $29+</h2>
-                 <img src="" alt="user__login">
-                 <img src="" alt="shoppingCart">
+                 <!-- <h2>FREE SHIPPING $29+</h2> -->
+                 <a onclick="showDiv();"><img alt="login" src="https://images.keurig.com/is/content/keurig/Adobe%20Target/HeaderTest/profileIcon.svg"
+          width=50" height="30"></a>
+                 <a href="#/cart" class="shoppingCart"></a>
              </div>
          </div>
          <div class="nav__elements">
@@ -34,9 +35,82 @@
         </div>
      </nav>
 
+     <div class="login">
+        
+          <div id="login-content">
+            <div class="login-form">
+              <div class="login-buttons">
+              <button id="login">Login</button>
+              <button id="signup">Sign Up</button>
+            </div>
+              <form class="log-in">
+                <input type="" id="email" placeholder="Email Address"><br>
+                <input type="password" id="password" placeholder="Password"><br>
+                <button id="log-in" onclick="logIn();">Login!</button>
+            </form>
+              <form class="sign-up">
+              <input type="" id="fname" placeholder="First Name"><br>
+              <input type="" id="lname" placeholder="Last Name"><br>
+              <input type="" id="signEmail" placeholder="Email Address"><br>
+              <input type="password" id="signPassword" placeholder="Password"><br>
+              <button id="sign-up" onclick="createUser();">Sign Up!</button>
+            </form>
+            </div>
+          </div>
+      </div>
+
      <div class="app"></div>
 
-     <footer></footer>
+     <footer class="footer">
+         <div class="brownBar">
+             <h2 class="findStore">Find a Store</h2>
+             <h2 class="customerSupport">Customer Support: 866-901-BREW(2793)</h2>'
+             <div class="followUs">
+             <h2 class="followUs">Follow Us</h2>
+             <img src="" alt="Twitter">
+             <img src="" alt="Facebook">
+             <img src="" alt="Instagram">
+            </div>
+         </div>
+         <div class="footer__content">
+             <div class="left-side">
+                 <h2>Shop</h2>
+                 <p>Coffee Makers</p>
+                 <p>Beverages</p>
+                <h2>Orders</h2>
+                <p>Track Your Order</p>
+                <p>Returns</p>
+                <p>Auto Delivery Orders</p>
+             </div>
+             <div class="left-middle">
+
+                     <h2>Helpful Info</h2>  
+                     <p>Register Your Appliance</p>
+                     <p>Support</p>
+                     <p>Product Recall</p>
+                     <p>Business Solution</p>
+                     <p>Site Map</p>
+                     <p>Contact Us</p>
+                     <p>CA Privacy Rights</p>
+                     <p>Do Not Sell My Personal Information</p>
+             </div>
+             <div class="right-middle">
+                     <h2>About Us</h2>
+                     <p>About Us</p>
+                     <p>News</p>
+                     <p>Careers</p>
+                     <p>Sustainability</p>
+                     <p>Rewards Program</p>
+                     <p>Accepted Payment</p>
+             </div>
+             <div class="Right">
+                     <h2>Join Our Mailing List</h2> 
+                     <p>Stay up-to-date with the latest news<br> and new arrivals direct to your inbox</p>
+                     <input type="text" placeholder="Your Email">
+                     <button>Sign Up</button>
+             </div>
+         </div>
+     </footer>
 
      <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="app/model.js"></script>

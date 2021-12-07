@@ -20,8 +20,13 @@ p {
   margin-bottom: 16px;
 }
 
+nav {
+  margin-top: 50px;
+}
 nav .logo__stuff {
   margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 80px;
   width: 100%;
   height: 10px;
   display: -webkit-box;
@@ -34,18 +39,33 @@ nav .logo__stuff {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+nav .logo__stuff .logo {
+  width: 175px;
+  height: 30px;
+  padding-top: 0px;
+  margin-left: -200px;
+}
 nav .logo__stuff .search__bar .search {
-  width: 500px;
-  height: 50px;
+  width: 600px;
+  height: 40px;
   border-radius: 40px 40px 40px 40px;
   color: #495057;
   background-color: #f3f3f3;
+  background: url(../images/searchIcon2Blue.svg) 20px center no-repeat;
+  padding-left: 55px;
 }
 nav .logo__stuff .cart {
-  margin-top: 20px;
+  margin-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+nav .logo__stuff .cart .shoppingCart {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/keurig-cart.svg);
+  margin-left: 30px;
+  background-repeat: no-repeat;
 }
 nav .nav__elements {
   width: 75%;
@@ -57,15 +77,132 @@ nav .nav__elements {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 20px;
+  margin-left: 60px;
 }
 
 @media only screen and (max-width: 991px) {
-  .search {
+  nav {
+    width: 991px;
+    margin-bottom: 200px;
+  }
+  nav .logo__stuff .logo {
+    margin-left: 190px;
+    margin-right: -200px;
+  }
+  nav .logo__stuff .search__bar {
+    margin-top: 100px;
+    margin-left: -265px;
+    height: 40px;
+  }
+  nav .logo__stuff .search__bar .search {
     height: 100%;
+    border-radius: 0px;
     padding: 0px 0px 0px 10px;
     font-size: 14px;
-    border: none;
     background-color: #f3f3f3;
-    border-radius: 0px;
+    background-image: none;
+  }
+  nav .logo__stuff .cart {
+    margin-top: 0px;
+    margin-left: -100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .logo__stuff .cart .shoppingCart {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/keurig-cart.svg);
+    background-repeat: no-repeat;
+  }
+  nav .nav__elements {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .login {
+    display: none;
+  }
+}
+footer {
+  margin-left: 110px;
+}
+footer .brownBar {
+  width: 1198.4px;
+  height: 40px;
+  background-color: #3b2b2f;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  font-size: 14px;
+}
+footer .brownBar .findStore {
+  margin-left: 10px;
+}
+footer .brownBar .customerSupport {
+  margin-left: 30px;
+}
+footer .brownBar .followUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+footer .footer__content .left-middle {
+  padding-left: 100px;
+}
+footer .footer__content .right-middle {
+  padding-left: 100px;
+}
+footer .footer__content .Right {
+  padding-left: 200px;
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    width: 985px;
+    margin-left: -10px;
+  }
+  footer .brownBar {
+    width: 100%;
+    height: 50px;
+    white-space: nowrap;
+  }
+  footer .brownBar .findStore {
+    margin-left: 10px;
+  }
+  footer .brownBar .customerSupport {
+    margin-left: 30px;
+  }
+  footer .brownBar .followUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 100px;
+  }
+  footer .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    padding-left: -10px;
+  }
+  footer .footer__content .left-middle {
+    padding-left: 100px;
+  }
+  footer .footer__content .right-middle {
+    padding-left: 100px;
+  }
+  footer .footer__content .Right {
+    padding-left: -200px;
   }
 }
