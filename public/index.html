@@ -1,119 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
- <meta charset="UTF-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Coffee Shop</title>
- <link rel="stylesheet" href="css/styles.css">
- </head>
- <body>
-     <nav>
-         <div class="logo__stuff">
-             <div class="logo">
-                 <img src="images/keurig_ca_logo.svg" alt="KeurigLogo">
-             </div>
-             <div class="search__bar">
-                 <input type="search" placeholder="Search hundreds of ways to brew..." class="search">
-             </div>
-             <div class="cart">
-                 <!-- <h2>FREE SHIPPING $29+</h2> -->
-                 <a onclick="showDiv();"><img alt="login" src="https://images.keurig.com/is/content/keurig/Adobe%20Target/HeaderTest/profileIcon.svg"
-          width=50" height="30"></a>
-                 <a href="#/cart" class="shoppingCart"></a>
-             </div>
-         </div>
-         <div class="nav__elements">
-         <h2>COFFEE, TEA & MORE</h2>
-         <h2>COFFEE MAKERS</h2>
-         <h2>ACCESSORIES</h2>
-         <h2>AUTO DELIVERY</h2>
-         <h2>GET STARTED</h2>
-         <h2>GIFT GUIDE</h2>
-         <h2>DEALS</h2>
-         <h2>CUSTOMIZE</h2>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keurig</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+  </head>
+  <body>
+    <div class="app">
+      <div class="logo"></div>
+<div class="search-bar">
+  <input type="text" placeholder="&ensp;&ensp;Search hundreds of ways to brew..." >
+  <i class="fa fa-search"></i>
+</div>
+<nav>
+  <a href="">COFFEE, TEA & MORE</a>
+  <a href="#/products">COFFEE MAKERS</a>
+  <a href="">ACCESSORIES</a>
+  <a href="">AUTO DELIVERY</a>
+  <a href="">GET STARTED</a>
+  <a href="">GIFT GUIDE</a>
+  <a href=""><span style="color:red"></span>DEALS</a>
+  <a href="">CUSTOMIZE</a>
+</nav>
+<i id="bars" class="fas fa-bars"  onclick="openNav()"></i>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">COFFEE, TEA & MORE</a>
+    <a href="#/products">COFFEE MAKERS</a>
+    <a href="">ACCESSORIES</a>
+    <a href="">AUTO DELIVERY</a>
+    <a href="">GET STARTED</a>
+    <a href="">GIFT GUIDE</a>
+    <a href="">DEALS</a>
+    <a href="">CUSTOMIZE</a>
+</div>
+<div class="login">
+  <a onclick="showDiv(event);"><img alt="login" src="https://images.keurig.com/is/content/keurig/Adobe%20Target/HeaderTest/profileIcon.svg"
+    width="50" height="30"></a>
+    <div id="login-content">
+      <div class="login-form">
+        <div onclick="closeDiv(event);" id="close">
+          <p>X Close</p>
         </div>
-     </nav>
-
-     <div class="login">
-        
-          <div id="login-content">
-            <div class="login-form">
-              <div class="login-buttons">
-              <button id="login">Login</button>
-              <button id="signup">Sign Up</button>
-            </div>
-              <form class="log-in">
-                <input type="" id="email" placeholder="Email Address"><br>
-                <input type="password" id="password" placeholder="Password"><br>
-                <button id="log-in" onclick="logIn();">Login!</button>
-            </form>
-              <form class="sign-up">
-              <input type="" id="fname" placeholder="First Name"><br>
-              <input type="" id="lname" placeholder="Last Name"><br>
-              <input type="" id="signEmail" placeholder="Email Address"><br>
-              <input type="password" id="signPassword" placeholder="Password"><br>
-              <button id="sign-up" onclick="createUser();">Sign Up!</button>
-            </form>
-            </div>
-          </div>
+        <div class="login-buttons">
+        <button id="login">Login</button>
+        <button onclick="signOut();" id="log-out">Log Out</button>
+        <button id="signup">Sign Up</button>
       </div>
+        <form class="log-in">
+          <input type="" id="email" placeholder="Email Address"><br>
+          <input type="password" id="password" placeholder="Password"><br>
+          <button id="log-in" onclick="logIn();">Sign In</button>
+      </form>
+        <form class="sign-up">
+        <input type="" id="fname" placeholder="First Name"><br>
+        <input type="" id="lname" placeholder="Last Name"><br>
+        <input type="" id="signEmail" placeholder="Email Address"><br>
+        <input type="password" id="signPassword" placeholder="Password"><br>
+        <button id="sign-up" onclick="createUser();">Sign Up!</button>
+      </form>
+      </div>
+    </div>
+</div>
+<div class="cart">
+  <a href="#/carts"><img alt="login" src="../images/shopping-cart.png"
+    width="30" height="30"></a>
+    <div id="counter"></div>
+</div>
+<div id="app"></div>
+<footer class="footer">
+<div class="bar">
+  <div class="text">
+    <p><i style='font-size:14px' class='fas'>&#xf3c5;</i>&ensp;Find A Store&ensp;<i class="fa fa-circle"></i> &ensp; &ensp; Customer Support: 866-901-BREW(2739)</p>
+    <p>Follow Us &ensp; <i class="fab fa-twitter"></i> &ensp; <i class="fab fa-facebook-f"></i> &ensp; <i class="fab fa-instagram"></i></p>
+  </div>
+</div>
+<div class="shop">
+  <h4>Shop</h4>
+  <a href="">Coffee Makers</a>
+  <a href="">Beverages</a>
+</div>
+<div class="order">
+  <h4>Orders</h4>
+  <a href="">Track Your Orders</a>
+  <a href="">Returns</a>
+  <a href="">Auto Delivery Orders</a>
+</div>
+<div class="help">
+  <h4>Helpful Info</h4>
+  <a href="">Register Your Appliance</a>
+  <a href="">Support</a>
+  <a href="">Product Recall</a>
+  <a href="">Buisness Soulution</a>
+  <a href="">Site Map</a>
+  <a href="">Contact Us</a>
+  <a href="">CA Privacy Right</a>
+  <a href="">Do Not Sell My Personal Information</a>
+</div>
+<div class="about-us">
+  <h4>About Us</h4>
+  <a href="">About Us</a>
+  <a href="">News</a>
+  <a href="">Careers</a>
+  <a href="">Sustainability</a>
+  <a href="">Rewards Program</a>
+  <a href="">Accepted Payment</a>
+</div>
+<div class="mailing">
+  <h4>Join Our Mailing List</h4>
+  <p>Stay up-to-date with the latest news<br> and new arrivals direct to your inbox.
+  </p>
+  <div class="no-wrap">
+  <input type="email" placeholder="Your Email" name="" id="your">
+  <button id="email-button">Sign Up</button>
+</div>
+  <h4>Select Country</h4>
+  <input id="states" type="" placeholder="United States" name="" id="">
+</div>
+</footer>
+</div>
 
-     <div class="app"></div>
-
-     <footer class="footer">
-         <div class="brownBar">
-             <h2 class="findStore">Find a Store</h2>
-             <h2 class="customerSupport">Customer Support: 866-901-BREW(2793)</h2>'
-             <div class="followUs">
-             <h2 class="followUs">Follow Us</h2>
-             <img src="" alt="Twitter">
-             <img src="" alt="Facebook">
-             <img src="" alt="Instagram">
-            </div>
-         </div>
-         <div class="footer__content">
-             <div class="left-side">
-                 <h2>Shop</h2>
-                 <p>Coffee Makers</p>
-                 <p>Beverages</p>
-                <h2>Orders</h2>
-                <p>Track Your Order</p>
-                <p>Returns</p>
-                <p>Auto Delivery Orders</p>
-             </div>
-             <div class="left-middle">
-
-                     <h2>Helpful Info</h2>  
-                     <p>Register Your Appliance</p>
-                     <p>Support</p>
-                     <p>Product Recall</p>
-                     <p>Business Solution</p>
-                     <p>Site Map</p>
-                     <p>Contact Us</p>
-                     <p>CA Privacy Rights</p>
-                     <p>Do Not Sell My Personal Information</p>
-             </div>
-             <div class="right-middle">
-                     <h2>About Us</h2>
-                     <p>About Us</p>
-                     <p>News</p>
-                     <p>Careers</p>
-                     <p>Sustainability</p>
-                     <p>Rewards Program</p>
-                     <p>Accepted Payment</p>
-             </div>
-             <div class="Right">
-                     <h2>Join Our Mailing List</h2> 
-                     <p>Stay up-to-date with the latest news<br> and new arrivals direct to your inbox</p>
-                     <input type="text" placeholder="Your Email">
-                     <button>Sign Up</button>
-             </div>
-         </div>
-     </footer>
-
-     <script src="lib/jquery-3.6.0.min.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.6.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.6.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.6.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="app/model.js"></script>
     <script src="app/app.js"></script>
- </body>
+
+  </body>
 </html>

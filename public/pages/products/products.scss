@@ -1,0 +1,130 @@
+.hero {
+  width: 1200px;
+  height: 200px;
+  background-image: url(../images/header.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 1;
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  }
+  h4 {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+  }
+}
+.filters {
+  margin-left: 140px;
+  #filter {
+    padding: 15px 32px;
+    background-color: white;
+    border-color: gray;
+    color: gray;
+  }
+}
+button {
+  margin: 20px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product-one {
+  width: 200px;
+  height: 450px;
+  margin-left: 150px;
+  box-shadow: 0 0 20px 10px #ececec;
+  margin-top: 50px;
+}
+
+.product-one:hover {
+  cursor: pointer;
+}
+
+.product-title {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+.product-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  #buy {
+    padding: 10px 24px;
+    border: 2px solid #f1be48;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #buy:hover {
+    border-color: black;
+  }
+}
+img {
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .products {
+    width: 768px;
+  }
+  .hero {
+    width: 768px;
+  }
+}
+span {
+  position: relative;
+  bottom: 5px;
+  color: gray;
+}
+.sort {
+  border: none;
+  margin-right: 20px;
+}
+@media screen and (max-width: 360px) and (max-height: 700px) {
+  .products {
+    width: 360px;
+  }
+  .hero {
+    width: 360px;
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      position: relative;
+      left: 0px;
+      bottom: 150px;
+    }
+  }
+  span {
+    position: relative;
+    bottom: 5px;
+    color: gray;
+  }
+  .sort {
+    border: none;
+    margin-right: 20px;
+  }
+  .product-one {
+    margin: 0 auto;
+  }
+  .filters {
+    position: relative;
+    right: 50px;
+  }
+}

@@ -1,0 +1,230 @@
+footer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 12;
+}
+.bar {
+  width: 80%;
+  height: 50px;
+  background-color: #3b2b2f;
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    p {
+      color: white;
+      margin-top: 15px;
+    }
+  }
+  .fa {
+    position: relative;
+    bottom: 2px;
+    font-size: 5px;
+  }
+}
+.shop {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 160px;
+  margin-left: 150px;
+  h4 {
+    margin-left: 50px;
+  }
+}
+.order {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  h4 {
+    margin-left: 50px;
+  }
+}
+.help {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  margin-left: 500px;
+  h4 {
+    margin-left: 50px;
+  }
+}
+.about-us {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 85px;
+  margin-left: 900px;
+  h4 {
+    margin-left: 50px;
+  }
+}
+.mailing {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 1100px;
+  h4 {
+    margin-left: 50px;
+  }
+  input[type="email"] {
+    margin-left: 35px;
+    width: 55%;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  #email-button {
+    position: relative;
+    right: 25px;
+    padding: 5px 5px;
+    border: 2px solid #f9c507;
+    background-color: white;
+  }
+
+  #states {
+    width: 70%;
+    margin-left: 40px;
+    padding: 5px 5px;
+    border: 2px solid gray;
+    background-color: white;
+  }
+
+  #your {
+    padding: 5px 5px;
+    border: 2px solid gray;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  footer {
+    width: 768px;
+    height: 1024px;
+  }
+  .shop {
+    margin-bottom: 350px;
+    margin-left: 100px;
+  }
+  .order {
+    margin-bottom: 250px;
+    margin-left: 100px;
+  }
+  .help {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .about-us {
+    margin-left: 500px;
+    margin-bottom: 275px;
+  }
+  .mailing {
+    margin-left: 500px;
+    margin-bottom: 2px;
+  }
+  .bar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) and (max-height: 700px) {
+  footer {
+    width: 360px;
+    height: 1000px;
+  }
+  .shop {
+    margin-bottom: 370px;
+    margin-left: -40px;
+    a {
+      font-size: 10px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+  }
+  .order {
+    margin-bottom: 250px;
+    margin-left: -40px;
+    a {
+      font-size: 10px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+  }
+  .help {
+    margin-left: -40px;
+    margin-top: 100px;
+    a {
+      font-size: 10px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+  }
+  .about-us {
+    margin-left: 120px;
+    margin-bottom: 320px;
+    a {
+      font-size: 10px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+  }
+  .mailing {
+    margin-left: 120px;
+    margin-bottom: 100px;
+    h4 {
+      font-size: 10px;
+    }
+    a {
+      font-size: 10px;
+    }
+    p {
+      font-size: 10px;
+    }
+    #email-button {
+      position: relative;
+      right: 25px;
+      padding: 0px 0px;
+      border: 2px solid #f9c507;
+      background-color: white;
+    }
+
+    #states {
+      width: 40%;
+      margin-left: 40px;
+      padding: 2px 2px;
+      border: 2px solid gray;
+      background-color: white;
+    }
+
+    #your {
+      padding: 0px 0px;
+      border: 2px solid gray;
+      background-color: white;
+      width: 40%;
+    }
+  }
+  .bar {
+    width: 100%;
+  }
+}
